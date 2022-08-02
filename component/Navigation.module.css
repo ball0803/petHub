@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 span{
+    font-weight: 400;
+}
+
+.navPage{
+    display: flex;
+
+}
+
+.navPage .active{
+    background-color: black;
+    color: white;
+    width: 6rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}

@@ -7,15 +7,20 @@
 }
 
 .icon {
-  height: 2rem;
-  width: 2rem;
-  margin-right: 1rem;
-  fill: #525252;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    fill: #525252;
 }
 
 .logo{
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.logo h1{
+    cursor: pointer;
 }
 
 .logo h1 span{
@@ -25,24 +30,27 @@
 .navPage{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .navPage h2{
-    margin: 0 0.6rem;
+    cursor: pointer;
+    margin: 0 1.5rem;
     font-weight: 500;
+    transition: 200ms;
 }
 
 .navPage .active{
-    background-color: #525252;
+    /* background-color: #525252; */
     color: white;
-    width: 6rem;
+    /* width: 6rem; */
     text-align: center;
     align-content: center;
-    border-radius: 0.5rem;
-    font-weight: 500;
+    /* border-radius: 0.5rem; */
 }
 
 .user svg{
+    cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
     margin-left: 1rem;
@@ -51,6 +59,17 @@
 .user{
     display: flex;
     margin-right: 1.5rem;
+}
+
+.indicator{
+    transition: 200ms;
+    position: absolute;
+    width: 6rem;
+    height: 1.4rem;
+    background-color: #525252;
+    z-index: -1;
+    border-radius: 0.5rem;
+    left: 0;
 }
 
 @media (max-width: 650px) {

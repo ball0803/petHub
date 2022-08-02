@@ -13,6 +13,15 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <h1>
+          <Image src='/pethub.svg' height={70} width={70}></Image>
+          <h2>Pet<span>Hub</span></h2>
+        </h1>
+        <Image src='/welcome.svg' height={250} width={250}></Image>
+        <h2>Welcome to PetHub</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ut vero omnis vel distinctio aut deleniti illo fuga praesentium repellendus!</p>
+        <button className='btn-primary' style={{width: "15rem", marginBottom: "0.8rem"}}>Get started</button>
+        <button className="btn-secondary" style={{width: "15rem"}}>Sign In</button>
       </main>
     </div>
   )

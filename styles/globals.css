@@ -14,6 +14,30 @@ a {
 * {
   box-sizing: border-box;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary{
+  background-color: #525252;
+  border: none;
+  color: white;
+  font-size: medium;
+  height: 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-secondary{
+  font-size: medium;
+  color: #525252;
+  background-color: white;
+  border: #525252 2px solid;
+  font-weight: 600;
+  height: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,12 +1,16 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: #525252;
+  font-size: x-small;
 }
 
 .icon {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   margin-right: 1rem;
+  fill: #525252;
 }
 
 .logo{
@@ -20,13 +24,49 @@
 
 .navPage{
     display: flex;
+    align-items: center;
+}
 
+.navPage h2{
+    margin: 0 0.6rem;
+    font-weight: 500;
 }
 
 .navPage .active{
-    background-color: black;
+    background-color: #525252;
     color: white;
     width: 6rem;
     text-align: center;
-    border-radius: 0.3rem;
+    align-content: center;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.user svg{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 1rem;
+    fill: #525252;
+}
+.user{
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+@media (max-width: 650px) {
+   .logo{
+    display:none ;
+   } 
+   .user svg:first-child{
+    display: none;
+   } 
+   .navbar li:nth-child(3){
+    position: absolute;
+    right: 0;
+   }
+   .navbar{
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+   }
 }
